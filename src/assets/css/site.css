@@ -55,8 +55,9 @@
   --step-3: clamp(2.2rem, 4.6vw, 3.5rem);
   --step-4: clamp(2.8rem, 6.4vw, 5.4rem);
   --radius: 14px;
-  --gutter-l: max(20px, env(safe-area-inset-left, 0px));
-  --gutter-r: max(20px, env(safe-area-inset-right, 0px));
+  --page-max: 1800px;
+  --gutter-l: max(20px, 4vw, env(safe-area-inset-left, 0px));
+  --gutter-r: max(20px, 4vw, env(safe-area-inset-right, 0px));
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -76,7 +77,7 @@ a { color: inherit; }
 h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
 p { margin: 0; max-width: 62ch; }
 
-.wrap { max-width: 1180px; margin: 0 auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
+.wrap { max-width: var(--page-max); margin: 0 auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
 .section { padding-block: clamp(4rem, 9vw, 7.5rem); }
 .eyebrow { display: block; font-size: var(--step--1); font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.1rem; }
 
@@ -99,7 +100,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   background: color-mix(in srgb, var(--bg) 90%, transparent);
   backdrop-filter: blur(12px);
 }
-.site-header .wrap { max-width: 1400px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; }
+.site-header .wrap { max-width: var(--page-max); display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; }
 .logo { font-family: var(--font-display); font-size: 1.4rem; line-height: 1.1; text-decoration: none; display: grid; white-space: nowrap; }
 .logo span { font: 500 0.7rem var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
 .nav { display: flex; gap: 1.6rem; align-items: center; margin-left: auto; }
@@ -138,7 +139,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 /* Hero: the photo's empty plaster wall carries the headline */
 .hero { padding-left: var(--gutter-l); padding-right: var(--gutter-r); padding-block: 0.5rem 0; }
-.hero-frame { position: relative; max-width: 1400px; margin: 0 auto; aspect-ratio: 3 / 2; max-height: 82vh; width: 100%; }
+.hero-frame { position: relative; max-width: calc(var(--page-max) - var(--gutter-l) - var(--gutter-r)); margin: 0 auto; aspect-ratio: 3 / 2; max-height: 82vh; width: 100%; }
 .hero-img {
   position: absolute; inset: 0; border-radius: calc(var(--radius) * 1.5);
   background: #D9D4CC url("../img/hero.jpg") 0% 30% / cover no-repeat;
