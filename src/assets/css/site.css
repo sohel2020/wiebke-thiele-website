@@ -139,7 +139,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 /* Hero: the photo's empty plaster wall carries the headline */
 .hero { padding-left: var(--gutter-l); padding-right: var(--gutter-r); padding-block: 0.5rem 0; }
-.hero-frame { position: relative; max-width: calc(var(--page-max) - var(--gutter-l) - var(--gutter-r)); margin: 0 auto; aspect-ratio: 3 / 2; max-height: 82vh; width: 100%; }
+.hero-frame { position: relative; max-width: calc(var(--page-max) - var(--gutter-l) - var(--gutter-r)); margin: 0 auto; aspect-ratio: 16 / 9; width: 100%; }
 .hero-img {
   position: absolute; inset: 0; border-radius: calc(var(--radius) * 1.5);
   background: #D9D4CC url("../img/hero.jpg") 0% 30% / cover no-repeat;
@@ -154,7 +154,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .hero-actions .link { font-size: 1rem; }
 @media (max-width: 860px) {
   .hero-frame { aspect-ratio: auto; max-height: none; }
-  .hero-img { position: relative; aspect-ratio: 4 / 3.4; max-width: 100%; background-position: 22% 30%; }
+  .hero-img { position: relative; aspect-ratio: 16 / 9; max-width: 100%; background-position: 22% 30%; }
   .hero-copy { position: static; transform: none; width: auto; padding-top: 2rem; }
 }
 
