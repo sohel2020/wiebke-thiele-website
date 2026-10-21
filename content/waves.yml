@@ -1,0 +1,46 @@
+# Tanztermine für "Anmeldung zu Wiebkes Waves"
+#
+# So trägst du einen neuen Termin ein:
+#   - date: 2026-11-22      ← Jahr-Monat-Tag
+#     time: 15.00 – 17.00   ← Beginn – Ende
+#
+# Vergangene Termine verschwinden automatisch von der Website.
+# Du kannst sie trotzdem gelegentlich hier löschen.
+
+series:
+  - title:
+      de: Women’s Wave
+      en: Women’s Wave
+    info:
+      de: sonntags · Cornus-Remise · Gustav-Adolf-Straße 159
+      en: Sundays · Cornus-Remise · Gustav-Adolf-Straße 159
+    dates:
+      - date: 2026-10-25
+        time: 15.00 – 17.00
+      - date: 2026-11-22
+        time: 15.00 – 17.00
+
+  - title:
+      de: 18-Uhr-Wave
+      en: 6 pm Wave
+    info:
+      de: donnerstags · Optionsraum 2 · Wilhelmine-Gemberg-Weg 12, 10179 Berlin
+      en: Thursdays · Optionsraum 2 · Wilhelmine-Gemberg-Weg 12, 10179 Berlin
+    dates:
+      - date: 2026-10-15
+        time: 18.00 – 20.00
+      - date: 2026-10-29
+        time: 18.00 – 20.00
+      - date: 2026-11-12
+        time: 18.00 – 20.00
+      - date: 2026-12-03
+        time: 18.00 – 20.00
+      - date: 2026-12-17
+        time: 18.00 – 20.00
+
+# Preisauswahl im Anmeldeformular
+budget:
+  - de: 20 € (regulär)
+    en: €20 (standard)
+  - de: 16 € (ermäßigt)
+    en: €16 (reduced)

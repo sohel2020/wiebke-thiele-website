@@ -1,0 +1,59 @@
+  <section class="section" id="angebote">
+    <div class="wrap">
+      <div class="treat-head">
+        <div>
+          <span class="eyebrow">{{ t.treatments.eyebrow }}</span>
+          <h2>{{ t.treatments.title }}</h2>
+        </div>
+        <div class="tabs" role="tablist" aria-label="{{ t.treatments.eyebrow }}">
+          {%- for item in t.treatments.items %}
+          {%- set cfg = site.treatments[loop.index0] %}
+          <button class="tab" role="tab" id="tab-{{ cfg.id }}" aria-controls="{{ cfg.id }}" aria-selected="{{ 'true' if loop.first else 'false' }}"{% if not loop.first %} tabindex="-1"{% endif %}>{{ item.tab }}</button>
+          {%- endfor %}
+        </div>
+      </div>
+      {% for item in t.treatments.items %}
+      {%- set cfg = site.treatments[loop.index0] %}
+      <article class="panel" id="{{ cfg.id }}" role="tabpanel" aria-labelledby="tab-{{ cfg.id }}" style="--dot: {{ cfg.dot }}">
+        <div class="panel-top">
+          <div class="panel-intro">
+            <h3>{{ item.title }}</h3>
+            <p class="lead">{{ item.lead | md | safe }}</p>
+            {%- for p in item.paragraphs %}
+            <p>{{ p | md | safe }}</p>
+            {%- endfor %}
+          </div>
+          <div class="panel-side" style="background: var(--{{ cfg.panel }})">
+            <h4>{{ t.treatments.prices_label }}</h4>
+            {%- for price in item.prices %}
+            <div class="price"><span class="eur">{{ price.price }}</span><span class="what">{{ price.label }}</span></div>
+            {%- endfor %}
+            {%- if item.note %}
+            <p class="note">{{ item.note | md | safe }}</p>
+            {%- endif %}
+            <div><a class="btn" href="#kontakt">{{ t.treatments.cta }}</a></div>
+          </div>
+        </div>
+        <div class="panel-bottom">
+          <div>
+            <h4>{{ item.when_title }}</h4>
+            <p class="sub">{{ item.when_intro | md | safe }}</p>
+            <ul class="symptoms">
+              {%- for s in item.symptoms %}
+              <li>{{ s }}</li>
+              {%- endfor %}
+            </ul>
+          </div>
+          <div class="faq">
+            {%- for f in item.faq %}
+            <details>
+              <summary>{{ f.question }}</summary>
+              <p>{{ f.answer | md | safe }}</p>
+            </details>
+            {%- endfor %}
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>

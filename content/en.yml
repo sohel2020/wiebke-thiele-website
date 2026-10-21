@@ -1,0 +1,378 @@
+# All English texts of the website.
+# Same structure as de.yml. If you add or remove a line in one file, do the same in the other.
+
+meta:
+  title: Wiebke Thiele · Health Practice
+  description: Osteopathy, homeopathy and women’s health in Berlin Weißensee. Health practice Wiebke Thiele, Lehderstraße 60, 13086 Berlin.
+
+nav:
+  label: Main navigation
+  osteopathie: Osteopathy
+  homoeopathie: Homeopathy
+  frauengesundheit: Women’s health
+  rhythmen: 5Rhythms®
+  about: About me
+  praxis: Practice
+  kontakt: Contact
+  cta: Book an appointment
+  cta_short: Book
+  menu: Menu
+  close: Close
+  language: Language / Sprache
+  subtitle: Gesundheitspraxis
+
+hero:
+  image_alt: Wiebke Thiele in front of a wall with painted patches, hand on her chest
+  title: Your body, your life.
+  lede: Osteopathy, homeopathy and women’s health in Berlin Weißensee.
+  cta: Book an appointment
+  more: My treatments
+
+facts:
+  label: At a glance
+  items:
+    - title: Since 2015
+      text: own practice
+    - title: Weißensee
+      text: Lehderstraße 60
+    - title: Mon – Fri
+      text: 8.00 – 19.00
+    - title: Insurance
+      text: many subsidise
+
+intro:
+  title: Feel better.
+  question: >-
+    You have acute or chronic pain. Maybe you struggle with sleep. Or you feel exhausted and stressed?
+    Perhaps you are going through a crisis?
+  paragraphs:
+    - If you are looking for holistic support and relief, my health practice is the right place for you.
+    - >-
+      As an experienced body therapist, osteopath and homeopath, I offer treatments tailored to you,
+      with your health and well-being at the centre.
+
+treatments:
+  eyebrow: Treatments
+  title: My treatments for your health
+  prices_label: Prices
+  cta: Book now
+  items:
+    - tab: Osteopathy
+      title: Osteopathy works gently.
+      lead: >-
+        Osteopathy treats physical imbalances with manual therapy. After injuries, with postural problems or
+        chronic complaints, I offer you an individual treatment tailored exactly to you, which also activates
+        your body’s own healing powers.
+      paragraphs:
+        - >-
+          As a trained osteopath, I work with medical knowledge and precise techniques to find the causes of
+          your complaints. This covers muscles, fascia, joints and internal structures, which all work together.
+        - >-
+          Every treatment is based on a thorough examination and a clear goal: to move more freely and with
+          less discomfort.
+      prices:
+        - price: 110 €
+          label: First appointment with examination · 70 minutes
+        - price: 90 €
+          label: Each follow-up treatment · 50 minutes
+      note: ""
+      when_title: When osteopathy?
+      when_intro: >-
+        Osteopathy is recommended for functional complaints related to movement, posture, muscle tension or
+        body alignment. Typical complaints:
+      symptoms:
+        - Back pain, neck tension
+        - Joint complaints
+        - Jaw problems
+        - Headaches, migraine, dizziness, tinnitus
+        - Complaints after surgery or injuries
+        - Digestive problems
+        - Complaints during pregnancy or after birth
+      faq:
+        - question: How many appointments?
+          answer: >-
+            That depends entirely on your symptoms. It makes sense to book a follow-up soon after the first
+            appointment with examination.
+        - question: Does insurance pay?
+          answer: >-
+            Private health insurers cover the costs, and statutory insurers now often cover part of them. It is
+            worth asking. I cannot accept prescriptions directly, but you receive an invoice that you can submit
+            to your insurer.
+
+    - tab: Homeopathy
+      title: Homeopathy strengthens the whole system.
+      lead: >-
+        Homeopathy works systemically and regulates on an individual level. Treatment can ease your complaints
+        by triggering the body’s own responses. This supports self-regulation in chronic and acute conditions.
+      paragraphs:
+        - >-
+          As a process-oriented homeopath, I choose the right remedy for you after a detailed case history,
+          matched to your symptoms and your overall condition. The aim is to find causes and reduce symptoms.
+        - >-
+          My treatment plan is clearly structured, documented in a way you can follow, and guided by your
+          healing process. The therapy combines well with conventional medical treatment.
+      prices:
+        - price: 130 €
+          label: First appointment with case history · 80 minutes
+        - price: 90 €
+          label: Each follow-up treatment · 50 minutes
+      note: Consultations and follow-up appointments are also possible online.
+      when_title: When homeopathy?
+      when_intro: >-
+        Homeopathy suits functional, chronic or recurring complaints where the body’s regulation is disturbed,
+        often without a clear organic cause. Typical complaints:
+      symptoms:
+        - Recurring infections (e.g. bladder, bronchi)
+        - Sleep problems, exhaustion, irritability
+        - Digestive complaints
+        - Menstrual and menopausal complaints
+        - Psychosomatic symptoms, e.g. with stress, grief, crises
+        - Support with chronic illness
+      faq:
+        - question: How many appointments?
+          answer: >-
+            That depends entirely on your symptoms. It makes sense to book a follow-up soon after the first
+            appointment with case history.
+        - question: What works online?
+          answer: Consultations or interim appointments are also possible online.
+        - question: Does insurance pay?
+          answer: >-
+            Private health insurers cover the costs, and statutory insurers now often cover part of them. It is
+            worth asking! I cannot accept prescriptions directly, but you receive an invoice that you can submit
+            to your insurer.
+
+    - tab: Women’s health
+      title: "Women’s health: confident and mindful."
+      lead: >-
+        Women change all the time: with the cycle, in pregnancy, in menopause and everywhere in between. That is
+        exactly why your body needs more than standard solutions to feel well.
+      paragraphs:
+        - >-
+          In my practice there is room for every one of your concerns. Hormonal complaints, pain specific to
+          women and exhaustion are not imagined. They are real issues.
+        - >-
+          Whether PMS, endometriosis, perimenopause or simply the feeling of not being at home in your body:
+          I listen, look closely and take you seriously. You do not have to stay quiet when your body is loud.
+        - >-
+          With osteopathy, homeopathy and body therapy, I support you in a targeted, individual way. So you
+          feel better and life becomes lighter again.
+      prices:
+        - price: 130 €
+          label: First appointment with case history · 80 minutes
+        - price: 90 €
+          label: Each follow-up treatment · 50 minutes
+      note: Consultations can also take place online.
+      when_title: What does women’s health cover?
+      when_intro: >-
+        Depending on the stage of life, different complaints can appear on their own or together. The most
+        typical:
+      symptoms:
+        - Menstruation & PMS
+        - Endometriosis
+        - Migraine
+        - Mood swings / exhaustion
+        - Hormonal imbalances
+        - Back pain, sciatica
+        - Pelvic floor problems
+        - Sleep problems
+        - Perimenopause, menopause, postmenopause
+        - Hot flushes, sleep problems, exhaustion
+        - Weight gain, changes in metabolism
+        - Changes in libido
+        - Mood swings, irritability, depression
+        - Joint complaints, muscle tension
+        - Osteoporosis
+        - Psychosomatic complaints
+        - Chronic exhaustion / burnout
+      faq:
+        - question: How many appointments?
+          answer: >-
+            That depends entirely on your symptoms. It makes sense to book a follow-up soon after the first
+            appointment with case history.
+        - question: What works online?
+          answer: Every consultation can also take place online.
+        - question: Does insurance pay?
+          answer: >-
+            Private health insurers cover the costs, and statutory insurers now often cover part of them. It is
+            worth asking! I cannot accept prescriptions directly, but you receive an invoice that you can submit
+            to your insurer.
+
+rhythmen:
+  eyebrow: 5Rhythms® by Gabrielle Roth
+  title: Come and dance!
+  sub: >-
+    Free dance without choreography. A mindful dance space for movement, expression and connection.
+    Time to let go and recharge.
+  image_alt: Wiebke Thiele dancing barefoot in front of a concrete wall, fairy lights on the floor
+  waves_label: "The five movement qualities: flowing, powerful, creative, light, still"
+  qualities:
+    - flowing
+    - powerful
+    - creative
+    - light
+    - still
+  blocks:
+    - title: What are the 5Rhythms?
+      text: >-
+        To changing music, we move through five qualities of movement: flowing, powerful, creative, light or
+        still. There are no fixed steps, you follow your impulses. With or without experience: you are welcome,
+        with everything that wants to move right now.
+    - title: What to bring?
+      text: Wear comfortable clothes and bring water to drink. We dance barefoot or in soft dance shoes.
+    - title: Women’s Wave
+      text: >-
+        A dance floor for women only. Sunday afternoons in Berlin-Weißensee, for up to 20 participants.
+        A lovely space, easy to reach at Cagliari-Platz.
+    - title: 6 pm Wave
+      text: >-
+        For everyone who likes to dance in the early evening. In the spacious Optionsraum in Mitte, between
+        Hauptbahnhof and the Heinrich-Heine-Straße U-Bahn station.
+  signup:
+    title: Sign up for Wiebke’s Waves
+    sub: Choose your dance dates and reserve your spot.
+    cost: Cost
+    cost_hint: Choose your price
+    name: Name
+    email: Email
+    phone: Phone
+    message: Anything else you’d like to say
+    error: Please choose at least one date and fill in name, email and phone.
+    submit: Reserve my spot
+    success_title: Thank you!
+    success_text: Your sign-up has arrived. I look forward to dancing with you.
+    no_dates: New dates coming soon.
+  session:
+    image_alt: Wiebke Thiele in a dance movement close to the floor, black and white
+    eyebrow: Private sessions
+    title: At home in your dancing body.
+    paragraphs:
+      - >-
+        You love to dance and want to give your body real attention? You would like to work on your mobility
+        one-to-one?
+      - >-
+        As a certified 5Rhythms® teacher and dancer with experience in body therapy, I offer holistic private
+        sessions:
+    benefits:
+      - Release blockages
+      - Increase suppleness
+      - Manage pain
+      - Gain lightness
+      - Deepen embodiment
+    closing: Quality time for recovery, to support your dancing body as well as possible.
+    prices:
+      - price: 90 €
+        label: single session
+      - price: 430 €
+        label: 5-session card
+    cta: Book now
+
+about:
+  image_alt: Wiebke Thiele laughing in a pine forest, one leg stretched out against a tree trunk
+  eyebrow: About me
+  title: At home in the body.
+  quote: >-
+    “Energy moves in waves. Waves move in patterns. Patterns move in rhythms. A human being is just that:
+    energy, waves, patterns, rhythms. Nothing more. Nothing less. A dance.”
+  quote_author: Gabrielle Roth
+  cv:
+    - title: Specialisation
+      items:
+        - Acute pain
+        - Chronic pain
+        - Women’s health
+        - Psychological strain
+        - Post-surgery care
+        - Cystic fibrosis
+    - title: Experience
+      items:
+        - Own practice since 2015
+        - Virchow hospital (Charité)
+        - Therapy centres
+        - Berlin cystic fibrosis association
+        - Hospice
+        - Residential and care homes
+    - title: Training
+      items:
+        - Osteopathy degree (IAO)
+        - Process-oriented homeopath
+        - State-licensed Heilpraktikerin (naturopath)
+        - State-certified physiotherapist
+        - Certified 5Rhythms teacher
+        - Sociology degree
+  engage:
+    title: Community work
+    paragraphs:
+      - >-
+        I am a founding member of Initiative für Soziales Handeln e.V. and belong to the MACHBARINNEN BERLIN:
+        [www.inisha.de](https://www.inisha.de)
+      - >-
+        As a certified 5Rhythms® teacher, I volunteer in a non-profit health programme for women. Will you
+        dance with us? **Auftanzstelle für Frauen (dance programme for women).**
+
+praxis:
+  eyebrow: Practice & contact
+  title: Your path to better health.
+  lead: In beautiful, spacious rooms in Berlin-Weißensee, I take time for conversation, treatment and advice.
+  paragraphs:
+    - >-
+      My practice is at Lehderstraße 60, easy to reach by S-Bahn (Prenzlauer Allee) or tram
+      (Prenzlauer Allee / Ostseestraße).
+    - To book an appointment, just call. If I am with a patient, I will call you back soon.
+  card_title: Gesundheitspraxis Wiebke Thiele
+  address_label: Address
+  phone_label: Practice
+  mobile_label: Mobile
+  email_label: Email
+  hours_label: Hours
+  hours:
+    - Monday – Friday, 8.00 – 19.00
+    - Appointments by arrangement only
+  pay: For self-payers and privately insured patients, and subsidised by many statutory insurers.
+  map_title: "Map: health practice Wiebke Thiele, Lehderstraße 60, 13086 Berlin"
+
+kontakt:
+  eyebrow: Contact
+  title: Write to me.
+  lead: I will get back to you by phone soon.
+  call_hint: Prefer to call?
+  call_note: If I am with a patient, I will call you back soon.
+  first_name: First name
+  last_name: Last name
+  email: Email address
+  phone: Phone
+  message: Message
+  error: Please fill in all fields and check your email address.
+  submit: Send
+  success_title: Thank you for your message.
+  success_text: I will get back to you by phone soon.
+
+forms:
+  required: (required)
+  consent: By sending, you agree to the processing of your data under the [privacy policy](/datenschutz/) (in German).
+  sending: Sending …
+  failed: That did not work. Please try again or call me.
+  offline: The form is not connected yet. Please call or send an email.
+
+footer:
+  tagline: Osteopathy, homeopathy and women’s health in Berlin Weißensee.
+  practice_title: Practice
+  route: Get directions →
+  contact_title: Contact
+  hours_title: Opening hours
+  hours:
+    - Monday – Friday
+    - 8.00 – 19.00
+    - Appointments by arrangement only
+  copyright: Gesundheitspraxis Wiebke Thiele
+  legal_label: Legal
+  impressum: Legal notice (German)
+  datenschutz: Privacy policy (German)
+  top: Back to top ↑
+
+legal:
+  eyebrow: Legal
+  back: ← Back to the home page
+
+dates:
+  locale: en-GB
+  time_suffix: ""

@@ -1,0 +1,23 @@
+  <section class="hero">
+    <div class="hero-frame">
+      <div class="hero-img" role="img" aria-label="{{ t.hero.image_alt }}"></div>
+      <div class="hero-copy">
+        <h1>{{ t.hero.title }}</h1>
+        <p class="hero-lede">{{ t.hero.lede }}</p>
+        <div class="hero-actions">
+          <a class="btn" href="#kontakt">{{ t.hero.cta }}</a>
+          <a class="link" href="#angebote">{{ t.hero.more }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="{{ t.facts.label }}">
+    <div class="wrap">
+      <ul>
+        {%- for fact in t.facts.items %}
+        <li><strong>{{ fact.title }}</strong>{{ fact.text }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>

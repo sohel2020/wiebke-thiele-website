@@ -1,0 +1,32 @@
+  {%- set a = t.about %}
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="about-top">
+        <img src="/assets/img/wald.jpg" alt="{{ a.image_alt }}">
+        <div>
+          <span class="eyebrow">{{ a.eyebrow }}</span>
+          <h2>{{ a.title }}</h2>
+          <blockquote>
+            {{ a.quote }}
+            <cite>{{ a.quote_author }}</cite>
+          </blockquote>
+        </div>
+      </div>
+      <div class="cv">
+        {%- for col in a.cv %}
+        <div>
+          <h3>{{ col.title }}</h3>
+          <ul>{% for i in col.items %}<li>{{ i }}</li>{% endfor %}</ul>
+        </div>
+        {%- endfor %}
+      </div>
+      <div class="engage">
+        <h3>{{ a.engage.title }}</h3>
+        <div>
+          {%- for p in a.engage.paragraphs %}
+          <p>{{ p | md | safe }}</p>
+          {%- endfor %}
+        </div>
+      </div>
+    </div>
+  </section>

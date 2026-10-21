@@ -1,0 +1,393 @@
+# Alle deutschen Texte der Website.
+# Die englische Fassung steht in en.yml und hat genau dieselbe Struktur.
+#
+# Tipps:
+# - Längere Absätze stehen hinter ">-". Den Text darunter einrücken (2 Leerzeichen mehr).
+# - Fett: **Wort**   Link: [Text](https://adresse.de)
+# - Texte mit Doppelpunkt in "Anführungszeichen" setzen.
+
+meta:
+  title: Wiebke Thiele · Gesundheitspraxis
+  description: Osteopathie, Homöopathie und Frauengesundheit in Berlin Weißensee. Gesundheitspraxis Wiebke Thiele, Lehderstraße 60, 13086 Berlin.
+
+nav:
+  label: Hauptnavigation
+  osteopathie: Osteopathie
+  homoeopathie: Homöopathie
+  frauengesundheit: Frauengesundheit
+  rhythmen: 5Rhythmen®
+  about: Über mich
+  praxis: Praxis
+  kontakt: Kontakt
+  cta: Termin vereinbaren
+  cta_short: Termin
+  menu: Menü
+  close: Schließen
+  language: Sprache / Language
+  subtitle: Gesundheitspraxis
+
+hero:
+  image_alt: Wiebke Thiele vor einer Wand mit Farbflächen, die Hand auf der Brust
+  title: Dein Körper, dein Leben.
+  lede: Osteopathie, Homöopathie und Frauengesundheit in Berlin Weißensee.
+  cta: Termin vereinbaren
+  more: Meine Angebote
+
+facts:
+  label: Auf einen Blick
+  items:
+    - title: Seit 2015
+      text: eigene Praxis
+    - title: Weißensee
+      text: Lehderstraße 60
+    - title: Mo – Fr
+      text: 8.00 – 19.00 Uhr
+    - title: Krankenkassen
+      text: viele bezuschussen
+
+intro:
+  title: Fühl dich besser.
+  question: >-
+    Du hast akute oder chronische Schmerzen. Vielleicht leidest du unter Schlafstörungen.
+    Oder bist du sehr erschöpft und gestresst? Erlebst sogar eine Krise?
+  paragraphs:
+    - Wenn du dir ganzheitliche Unterstützung und Linderung wünschst, bist du in meiner Gesundheitspraxis richtig.
+    - >-
+      Als erfahrene Körpertherapeutin, Osteopathin und Homöopathin biete ich dir individuell abgestimmte
+      Behandlungsmethoden, die deine Gesundheit und dein Wohlbefinden in den Mittelpunkt stellen.
+
+treatments:
+  eyebrow: Behandlungen
+  title: Meine Angebote für deine Gesundheit
+  prices_label: Preise
+  cta: Termin machen
+  items:
+    - tab: Osteopathie
+      title: Osteopathie wirkt sanft.
+      lead: >-
+        Osteopathie behandelt gezielt körperliche Dysbalancen durch manuelle Therapie. Nach Verletzungen,
+        bei Haltungsschäden oder chronischen Beschwerden biete ich dir eine individuelle, genau auf dich
+        abgestimmte Behandlung, die gleichzeitig deine Selbstheilungskräfte aktiviert.
+      paragraphs:
+        - >-
+          Als ausgebildete Osteopathin arbeite ich mit medizinischem Know-how und präzisen Techniken, um die
+          Ursachen deiner Beschwerden zu finden. Dabei geht es um Muskeln, Faszien, Gelenke und innere
+          Strukturen, die im Zusammenspiel funktionieren.
+        - >-
+          Jede Behandlung basiert auf einer ausführlichen Untersuchung und einem klaren Therapieziel:
+          beweglicher und beschwerdefreier zu werden.
+      prices:
+        - price: 110 €
+          label: Ersttermin mit Untersuchung · 70 Minuten
+        - price: 90 €
+          label: Jeder weitere Behandlungstermin · 50 Minuten
+      note: ""
+      when_title: Wann Osteopathie?
+      when_intro: >-
+        Osteopathie ist empfehlenswert bei funktionellen Beschwerden, die mit Bewegung, Haltung, muskulären
+        Spannungen oder der Körperstatik zusammenhängen. Typische Beschwerden:
+      symptoms:
+        - Rückenschmerzen, Nackenverspannungen
+        - Gelenkbeschwerden
+        - Kieferprobleme
+        - Kopfschmerzen, Migräne, Schwindel, Tinnitus
+        - Beschwerden nach Operationen oder Verletzungen
+        - Verdauungsprobleme
+        - Beschwerden in der Schwangerschaft oder nach Geburt
+      faq:
+        - question: Wie viele Termine?
+          answer: >-
+            Das hängt ganz von deinem Beschwerdebild ab. Sinnvoll ist es, nach dem ersten Termin mit
+            Untersuchung zeitnah einen Folgetermin zu vereinbaren.
+        - question: Zahlt die Krankenkasse?
+          answer: >-
+            Private Krankenkassen übernehmen die Kosten, gesetzliche Krankenkassen übernehmen inzwischen oft
+            einen Teil der Kosten. Nachfragen kann sich lohnen. Du kannst bei mir keine Verordnungen direkt
+            einlösen, erhältst jedoch eine entsprechende Rechnung, die du bei deiner Kasse einreichen kannst.
+
+    - tab: Homöopathie
+      title: Homöopathie stärkt systemisch.
+      lead: >-
+        Homöopathie arbeitet systemisch und regulierend auf individueller Ebene. Die Behandlung kann deine
+        Beschwerden lindern, indem sie gezielt körpereigene Reaktionen anstößt: So wird die Selbstregulation
+        bei chronischen und akuten Erkrankungen unterstützt.
+      paragraphs:
+        - >-
+          Als prozessorientierte Homöopathin wähle ich nach einer ausführlichen Anamnese das passende Mittel
+          für dich aus, abgestimmt auf dein Beschwerdebild und deinen Gesamtzustand. Ziel ist es, Ursachen
+          aufzuspüren und Symptome zu mindern.
+        - >-
+          Mein Behandlungsplan ist klar aufgebaut, nachvollziehbar dokumentiert und orientiert sich an deinem
+          Heilungsprozess. Die Therapie lässt sich gut mit schulmedizinischen Maßnahmen kombinieren.
+      prices:
+        - price: 130 €
+          label: Ersttermin mit Anamnese · 80 Minuten
+        - price: 90 €
+          label: Jeder weitere Behandlungstermin · 50 Minuten
+      note: Beratungstermine und Follow-up-Termine sind auch online möglich.
+      when_title: Wann Homöopathie?
+      when_intro: >-
+        Homöopathie eignet sich bei funktionellen, chronischen oder wiederkehrenden Beschwerden, bei denen
+        die Regulation gestört ist, oft ohne klare organische Ursache. Typische Beschwerden:
+      symptoms:
+        - Wiederkehrende Infekte (z. B. Blase, Bronchien)
+        - Schlafstörungen, Erschöpfung, Reizbarkeit
+        - Verdauungsbeschwerden
+        - Menstruations- und Wechseljahresbeschwerden
+        - Psychosomatische Symptome, z. B. bei Stress, Trauer, Krisen
+        - Unterstützung bei chronischen Erkrankungen
+      faq:
+        - question: Wie viele Termine?
+          answer: >-
+            Das hängt ganz von deinem Beschwerdebild ab. Sinnvoll ist es, nach dem ersten Termin mit Anamnese
+            zeitnah einen Folgetermin zu vereinbaren.
+        - question: Was geht online?
+          answer: Beratungstermine oder Zwischentermine sind auch online möglich.
+        - question: Zahlt die Krankenkasse?
+          answer: >-
+            Private Krankenkassen übernehmen die Kosten, gesetzliche Krankenkassen übernehmen inzwischen oft
+            einen Teil der Kosten. Nachfragen lohnt sich! Verordnungen lassen sich bei mir nicht direkt
+            einlösen, du erhältst jedoch eine entsprechende Rechnung, die du bei deiner Kasse einreichen kannst.
+
+    - tab: Frauengesundheit
+      title: "Frauengesundheit: selbstbewusst achtsam."
+      lead: >-
+        Frauen verändern sich ständig: mit dem Zyklus, in der Schwangerschaft, in den Wechseljahren und
+        überall dazwischen. Und genau deshalb braucht dein Körper mehr als Standardlösungen, um sich
+        wohlzufühlen.
+      paragraphs:
+        - >-
+          In meiner Gesundheitspraxis gibt es Raum für jedes deiner Anliegen. Denn Beschwerden durch Hormone,
+          frauenspezifische Schmerzen und Erschöpfung sind keine Einbildung, sondern echte Themen.
+        - >-
+          Ob PMS, Endometriose, Perimenopause oder einfach das Gefühl, nicht im Körper zuhause zu sein: Ich
+          höre hin, schaue genau und nehme dich ernst. Denn du musst nicht leise sein, wenn dein Körper laut ist.
+        - >-
+          Mit Osteopathie, Homöopathie und körpertherapeutischem Know-how unterstütze ich dich gezielt und
+          individuell. Damit du dich wohler fühlst und dein Leben wieder leichter wird.
+      prices:
+        - price: 130 €
+          label: Ersttermin mit Anamnese · 80 Minuten
+        - price: 90 €
+          label: Jeder weitere Behandlungstermin · 50 Minuten
+      note: Beratungstermine können auch online erfolgen.
+      when_title: Was gehört zu Frauengesundheit?
+      when_intro: >-
+        Je nach Lebensabschnitt können verschiedene Beschwerden einzeln und zusammen auftreten. Hier die
+        typischsten:
+      symptoms:
+        - Menstruation & PMS
+        - Endometriose
+        - Migräne
+        - Stimmungsschwankungen / Erschöpfung
+        - Hormonelle Dysbalancen
+        - Rückenschmerzen, Ischiasbeschwerden
+        - Beckenbodenprobleme
+        - Schlafstörungen
+        - Perimenopause, Menopause, Postmenopause
+        - Hitzewallungen, Schlafstörungen, Erschöpfung
+        - Gewichtszunahme, Veränderungen im Stoffwechsel
+        - Libidoveränderung
+        - Stimmungsschwankungen, Reizbarkeit, Depression
+        - Gelenkbeschwerden, Muskelverspannungen
+        - Osteoporose
+        - Psychosomatische Beschwerden
+        - Chronische Erschöpfung / Burnout
+      faq:
+        - question: Wie viele Termine?
+          answer: >-
+            Das hängt ganz von deinem Beschwerdebild ab. Sinnvoll ist es, nach dem ersten Termin mit Anamnese
+            zeitnah einen Folgetermin zu vereinbaren.
+        - question: Was geht online?
+          answer: Jeder Beratungstermin kann auch online erfolgen.
+        - question: Zahlt die Krankenkasse?
+          answer: >-
+            Private Krankenkassen übernehmen die Kosten, gesetzliche Krankenkassen übernehmen inzwischen oft
+            einen Teil der Kosten. Nachfragen lohnt sich! Verordnungen lassen sich bei mir nicht direkt
+            einlösen, du erhältst jedoch eine entsprechende Rechnung, die du bei deiner Kasse einreichen kannst.
+
+rhythmen:
+  eyebrow: 5Rhythmen® nach Gabrielle Roth
+  title: Komm tanzen!
+  sub: >-
+    Freier Tanz ohne Choreografie. Ein achtsamer Tanzraum für Bewegung, Ausdruck und Verbindung.
+    Zeit zum Loslassen und Auftanken.
+  image_alt: Wiebke Thiele tanzt barfuß vor einer Betonwand, Lichterkette am Boden
+  waves_label: "Die fünf Bewegungsqualitäten: fließend, kraftvoll, kreativ, leicht, still"
+  qualities:
+    - fließend
+    - kraftvoll
+    - kreativ
+    - leicht
+    - still
+  blocks:
+    - title: Was sind die 5Rhythmen?
+      text: >-
+        Zu unterschiedlicher Musik bewegen wir uns durch fünf Bewegungsqualitäten: fließend, kraftvoll,
+        kreativ, leicht oder still. Es gibt keine festen Schritte, du folgst deinen Impulsen. Mit oder ohne
+        Vorerfahrung: Du bist willkommen, mit allem, was gerade bewegt werden will.
+    - title: Was bringst du mit?
+      text: >-
+        Komm in bequemer Kleidung und bring Wasser zum Trinken mit. Wir tanzen barfuß oder in weichen
+        Tanzschuhen.
+    - title: Women’s Wave
+      text: >-
+        Ein Tanzboden nur für Frauen. Immer sonntagnachmittags in Berlin-Weißensee für maximal 20
+        Teilnehmende. Toller Raum und gut erreichbar am Cagliari-Platz.
+    - title: 18-Uhr-Wave
+      text: >-
+        Für alle, die gerne am frühen Abend tanzen wollen. Im geräumigen Optionsraum in Mitte, zentral
+        zwischen Hauptbahnhof und U-Bahnhof Heinrich-Heine-Straße.
+  signup:
+    title: Anmeldung zu Wiebkes Waves
+    sub: Wähle deine Tanzdaten und reserviere deinen Platz.
+    cost: Kosten
+    cost_hint: Wähle dein Budget
+    name: Name
+    email: E-Mail
+    phone: Telefon
+    message: Das will ich noch sagen
+    error: Bitte wähle mindestens einen Termin und fülle Name, E-Mail und Telefon aus.
+    submit: Platz reservieren
+    success_title: Vielen Dank!
+    success_text: Deine Anmeldung ist angekommen. Ich freue mich, mit dir zu tanzen.
+    no_dates: Neue Termine folgen bald.
+  session:
+    image_alt: Wiebke Thiele in einer bodennahen Tanzbewegung, schwarz-weiß
+    eyebrow: Einzel-Sessions
+    title: Im Tanzkörper zuhause.
+    paragraphs:
+      - >-
+        Du bist ein tanzender Mensch und willst deinem Körper echte Aufmerksamkeit schenken? Du möchtest
+        individuell an deiner Beweglichkeit arbeiten?
+      - >-
+        Als körpertherapeutisch erfahrene, zertifizierte 5Rhythmen®-Lehrerin und Tänzerin biete ich
+        ganzheitliche Einzel-Sessions:
+    benefits:
+      - Blockaden auflösen
+      - Geschmeidigkeit erhöhen
+      - Schmerzen managen
+      - Leichtigkeit gewinnen
+      - Embodiment vertiefen
+    closing: Deine Qualitätszeit zur Regeneration, um deinen Tanzkörper bestmöglich zu unterstützen.
+    prices:
+      - price: 90 €
+        label: Einzeltermin
+      - price: 430 €
+        label: 5er-Karte
+    cta: Termin machen
+
+about:
+  image_alt: Wiebke Thiele lachend im Kiefernwald, ein Bein ausgestreckt an einem Baumstamm
+  eyebrow: Über mich
+  title: Im Körper zuhause.
+  quote: >-
+    „Energie bewegt sich in Wellen, Wellen bewegen sich in Mustern. Ein menschlicher Körper ist genau das:
+    Energie, Wellen, Muster, Rhythmen. Nicht mehr und nicht weniger. Ein Tanz.“
+  quote_author: Gabrielle Roth
+  cv:
+    - title: Spezialisierung
+      items:
+        - Akute Schmerzen
+        - Chronische Schmerzen
+        - Frauengesundheit
+        - Psychische Belastung
+        - OP-Nachsorge
+        - Mukoviszidose
+    - title: Berufserfahrung
+      items:
+        - Eigene Praxis seit 2015
+        - Virchow-Klinikum
+        - Therapiezentren
+        - Mukoviszidose-Landesverband
+        - Hospiz
+        - Wohn- und Pflegeheime
+    - title: Ausbildung
+      items:
+        - Studium der Osteopathie (IAO)
+        - Prozessorientierte Homöopathin
+        - Staatlich geprüfte Heilpraktikerin
+        - Staatlich geprüfte Physiotherapeutin
+        - Zertifizierte 5Rhythmen-Lehrerin
+        - Studium der Soziologie
+  engage:
+    title: Soziales Engagement
+    paragraphs:
+      - >-
+        Ich bin Gründungsmitglied der Initiative für Soziales Handeln e.V. und gehöre zu den MACHBARINNEN
+        BERLIN: [www.inisha.de](https://www.inisha.de)
+      - >-
+        Als zertifizierte 5Rhythmen®-Lehrerin engagiere ich mich in einem gemeinnützigen Gesundheitsprogramm
+        für Frauen. Tanzt du mit? **Auftanzstelle für Frauen.**
+
+praxis:
+  eyebrow: Praxis & Kontakt
+  title: Dein Weg zu mehr Gesundheit.
+  lead: >-
+    In schönen, großzügigen Praxisräumen in Berlin-Weißensee nehme ich mir Zeit für Gespräch, Behandlung
+    und Beratung.
+  paragraphs:
+    - >-
+      Meine Praxis ist in der Lehderstraße 60, gut zu erreichen mit der S-Bahn (Prenzlauer Allee) oder der
+      Straßenbahn (Prenzlauer Allee / Ostseestraße).
+    - >-
+      Zur Terminvereinbarung einfach anrufen. Sollte ich gerade in einer Behandlung sein, melde ich mich
+      zeitnah zurück.
+  card_title: Gesundheitspraxis Wiebke Thiele
+  address_label: Adresse
+  phone_label: Praxis
+  mobile_label: Mobil
+  email_label: E-Mail
+  hours_label: Zeiten
+  hours:
+    - Montag – Freitag, 8.00 – 19.00 Uhr
+    - Termine nur nach Absprache
+  pay: Für Selbstzahlende, Privatversicherte und bezuschusst von vielen Krankenkassen.
+  map_title: "Karte: Gesundheitspraxis Wiebke Thiele, Lehderstraße 60, 13086 Berlin"
+
+kontakt:
+  eyebrow: Kontakt
+  title: Schreib mir.
+  lead: Gern melde ich mich zeitnah telefonisch bei dir.
+  call_hint: Lieber direkt anrufen?
+  call_note: Sollte ich gerade in einer Behandlung sein, melde ich mich zeitnah zurück.
+  first_name: Vorname
+  last_name: Nachname
+  email: E-Mail-Adresse
+  phone: Telefon
+  message: Nachricht
+  error: Bitte fülle alle Felder aus und prüfe deine E-Mail-Adresse.
+  submit: Senden
+  success_title: Vielen Dank für deine Nachricht.
+  success_text: Gern melde ich mich zeitnah telefonisch bei dir.
+
+forms:
+  required: (erforderlich)
+  consent: Mit dem Absenden stimmst du der Verarbeitung deiner Daten gemäß [Datenschutzerklärung](/datenschutz/) zu.
+  sending: Wird gesendet …
+  failed: Das hat leider nicht geklappt. Bitte versuche es noch einmal oder ruf mich an.
+  offline: Das Formular ist noch nicht verbunden. Bitte ruf mich an oder schreib eine E-Mail.
+
+footer:
+  tagline: Osteopathie, Homöopathie und Frauengesundheit in Berlin Weißensee.
+  practice_title: Praxis
+  route: Route planen →
+  contact_title: Kontakt
+  hours_title: Öffnungszeiten
+  hours:
+    - Montag – Freitag
+    - 8.00 – 19.00 Uhr
+    - Termine nur nach Absprache
+  copyright: Gesundheitspraxis Wiebke Thiele
+  legal_label: Rechtliches
+  impressum: Impressum
+  datenschutz: Datenschutz
+  top: Nach oben ↑
+
+legal:
+  eyebrow: Rechtliches
+  back: ← Zur Startseite
+
+dates:
+  locale: de-DE
+  time_suffix: " Uhr"

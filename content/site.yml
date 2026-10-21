@@ -1,0 +1,43 @@
+# Allgemeine Angaben, gleich in beiden Sprachen.
+# Texte in Deutsch und Englisch stehen in de.yml und en.yml.
+
+name: Wiebke Thiele
+practice: Gesundheitspraxis Wiebke Thiele
+url: https://www.wiebke-thiele.de
+
+address:
+  street: Lehderstraße 60
+  city: 13086 Berlin
+
+phone:
+  display: 030 – 420 284 23
+  tel: "+493042028423"
+
+mobile:
+  display: 0151 – 4644 5293
+  tel: "+4915146445293"
+
+email: info@wiebke-thiele.de
+
+# Adresse für Google Maps (Karte und "Route planen")
+maps_query: Lehderstraße 60, 13086 Berlin
+
+# Formulare: Adresse des Cloudflare Workers, der die E-Mails verschickt.
+# Leer lassen, solange der Worker noch nicht eingerichtet ist.
+form_endpoint: ""
+
+# Cloudflare Turnstile (Spamschutz), öffentlicher Site Key.
+# 1x00000000000000000000AA ist Cloudflares Testschlüssel, der immer besteht.
+turnstile_sitekey: 1x00000000000000000000AA
+
+# Farben der drei Behandlungen (Reihenfolge wie in de.yml / en.yml)
+treatments:
+  - id: osteopathie
+    panel: sage
+    dot: "#9BAE7F"
+  - id: homoeopathie
+    panel: slate
+    dot: "#A08BBE"
+  - id: frauengesundheit
+    panel: rose
+    dot: "#D08C92"

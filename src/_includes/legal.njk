@@ -1,0 +1,7 @@
+<main>
+<section class="legal-band"><div class="wrap"><span class="eyebrow">{{ t.legal.eyebrow }}</span><h1>{{ legal[legalPage].title }}</h1><p>{{ site.practice }} · {{ site.address.street }}, {{ site.address.city }}</p></div></section>
+<div class="legal"><div class="wrap"><article>
+{{ legal[legalPage].html | safe }}
+<p class="back"><a class="link" href="{{ home }}">{{ t.legal.back }}</a></p>
+</article></div></div>
+</main>

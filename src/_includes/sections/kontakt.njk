@@ -1,0 +1,70 @@
+  {%- set k = t.kontakt %}
+  <section class="section kontakt" id="kontakt">
+    <div class="wrap">
+      <div class="kontakt-intro">
+        <span class="eyebrow">{{ k.eyebrow }}</span>
+        <h2>{{ k.title }}</h2>
+        <p class="lead">{{ k.lead }}</p>
+        <p class="call-hint">{{ k.call_hint }}</p>
+        <ul class="call-list">
+          <li>
+            <a class="call" href="tel:{{ site.phone.tel }}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+              <span><small>{{ t.praxis.phone_label }}</small><strong>{{ site.phone.display }}</strong></span>
+            </a>
+          </li>
+          <li>
+            <a class="call" href="tel:{{ site.mobile.tel }}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18h2"/></svg>
+              <span><small>{{ t.praxis.mobile_label }}</small><strong>{{ site.mobile.display }}</strong></span>
+            </a>
+          </li>
+          <li>
+            <a class="call" href="mailto:{{ site.email }}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>
+              <span><small>{{ t.praxis.email_label }}</small><strong>{{ site.email }}</strong></span>
+            </a>
+          </li>
+        </ul>
+        <p class="call-note">{{ k.call_note }}</p>
+      </div>
+      <form class="form" id="contact-form" data-form="contact" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="f-first">{{ k.first_name }} <span>{{ t.forms.required }}</span></label>
+            <input id="f-first" name="firstName" autocomplete="given-name" maxlength="80" required>
+          </div>
+          <div class="field">
+            <label for="f-last">{{ k.last_name }} <span>{{ t.forms.required }}</span></label>
+            <input id="f-last" name="lastName" autocomplete="family-name" maxlength="80" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="f-email">{{ k.email }} <span>{{ t.forms.required }}</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" maxlength="200" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">{{ k.phone }} <span>{{ t.forms.required }}</span></label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" maxlength="50" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-msg">{{ k.message }} <span>{{ t.forms.required }}</span></label>
+          <textarea id="f-msg" name="message" rows="5" maxlength="5000" required></textarea>
+        </div>
+        <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="captcha" data-captcha></div>
+        <p class="form-error" data-error hidden>{{ k.error }}</p>
+        <p class="form-status" data-status role="status" hidden></p>
+        <div class="form-foot">
+          <button class="btn" type="submit">{{ k.submit }}</button>
+          <small>{{ t.forms.consent | md | safe }}</small>
+        </div>
+      </form>
+      <div class="form-done" id="form-done" hidden>
+        <h3>{{ k.success_title }}</h3>
+        <p>{{ k.success_text }}</p>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,16 @@
+{
+  "name": "wiebke-thiele-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/validate.mjs && eleventy",
+    "start": "eleventy --serve"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6",
+    "js-yaml": "5.4.2",
+    "markdown-it": "15.0.2"
+  }
+}

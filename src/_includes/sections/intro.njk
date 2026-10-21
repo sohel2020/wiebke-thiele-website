@@ -1,0 +1,11 @@
+  <section class="section intro">
+    <div class="wrap">
+      <h2>{{ t.intro.title }}</h2>
+      <div class="intro-text">
+        <p class="q">{{ t.intro.question | md | safe }}</p>
+        {%- for p in t.intro.paragraphs %}
+        <p>{{ p | md | safe }}</p>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>

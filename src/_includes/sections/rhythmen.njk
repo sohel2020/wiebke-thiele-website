@@ -1,0 +1,105 @@
+  {%- set r = t.rhythmen %}
+  {%- set q = r.qualities %}
+  <section class="section dance" id="rhythmen">
+    <div class="wrap">
+      <div class="dance-top">
+        <div>
+          <span class="eyebrow">{{ r.eyebrow }}</span>
+          <h2>{{ r.title }}</h2>
+          <p class="dance-sub">{{ r.sub | md | safe }}</p>
+        </div>
+        <img src="/assets/img/tanz1.jpg" alt="{{ r.image_alt }}">
+      </div>
+
+      <div class="waves" role="img" aria-label="{{ r.waves_label }}">
+        <svg viewBox="0 0 1000 170" fill="none">
+          <path d="M10 95 C 70 40, 130 40, 200 95" stroke="#C9D6B4" stroke-width="4" stroke-linecap="round"/>
+          <path d="M200 95 L 230 45 L 260 120 L 290 50 L 320 115 L 350 55 L 380 95 L 400 95" stroke="#CDBDE3" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M400 95 C 420 20, 440 150, 465 60 S 505 140, 530 40 S 570 150, 600 95" stroke="#F2C4C6" stroke-width="4" stroke-linecap="round"/>
+          <path d="M600 95 C 640 70, 660 70, 700 95 S 760 120, 800 95" stroke="#F6CFB0" stroke-width="4" stroke-linecap="round"/>
+          <path d="M800 95 L 990 95" stroke="#F8EEF0" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 14" opacity=".6"/>
+          <text class="num" x="105" y="150" text-anchor="middle">01</text><text x="105" y="22" text-anchor="middle">{{ q[0] }}</text>
+          <text class="num" x="300" y="150" text-anchor="middle">02</text><text x="300" y="22" text-anchor="middle">{{ q[1] }}</text>
+          <text class="num" x="500" y="168" text-anchor="middle">03</text><text x="500" y="14" text-anchor="middle">{{ q[2] }}</text>
+          <text class="num" x="700" y="150" text-anchor="middle">04</text><text x="700" y="44" text-anchor="middle">{{ q[3] }}</text>
+          <text class="num" x="895" y="150" text-anchor="middle">05</text><text x="895" y="62" text-anchor="middle">{{ q[4] }}</text>
+        </svg>
+      </div>
+
+      <div class="dance-grid">
+        {%- for b in r.blocks %}
+        <div>
+          <h3>{{ b.title }}</h3>
+          <p>{{ b.text | md | safe }}</p>
+        </div>
+        {%- endfor %}
+      </div>
+
+      {%- set s = r.signup %}
+      <div class="signup" id="anmeldung">
+        <div class="signup-head">
+          <h2>{{ s.title }}</h2>
+          <p>{{ s.sub }}</p>
+        </div>
+        <form class="signup-form" id="wave-form" data-form="signup" novalidate>
+          <div class="wave-list" id="wave-list"></div>
+          <fieldset class="budget">
+            <legend>{{ s.cost }} <span>{{ s.cost_hint }}</span></legend>
+            <div class="budget-options" id="budget-options"></div>
+          </fieldset>
+          <div class="row three">
+            <div class="field">
+              <label for="w-name">{{ s.name }} <span>{{ t.forms.required }}</span></label>
+              <input id="w-name" name="name" autocomplete="name" maxlength="120" required>
+            </div>
+            <div class="field">
+              <label for="w-email">{{ s.email }} <span>{{ t.forms.required }}</span></label>
+              <input id="w-email" name="email" type="email" autocomplete="email" maxlength="200" required>
+            </div>
+            <div class="field">
+              <label for="w-phone">{{ s.phone }} <span>{{ t.forms.required }}</span></label>
+              <input id="w-phone" name="phone" type="tel" autocomplete="tel" maxlength="50" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="w-msg">{{ s.message }}</label>
+            <textarea id="w-msg" name="message" rows="3" maxlength="3000"></textarea>
+          </div>
+          <div class="hp" aria-hidden="true"><label for="w-website">Website</label><input id="w-website" name="website" tabindex="-1" autocomplete="off"></div>
+          <div class="captcha" data-captcha></div>
+          <p class="form-error" data-error hidden>{{ s.error }}</p>
+          <p class="form-status" data-status role="status" hidden></p>
+          <div class="form-foot">
+            <button class="btn" type="submit">{{ s.submit }}</button>
+            <small>{{ t.forms.consent | md | safe }}</small>
+          </div>
+        </form>
+        <div class="signup-done" id="wave-done" hidden>
+          <h3>{{ s.success_title }}</h3>
+          <p>{{ s.success_text }}</p>
+        </div>
+      </div>
+
+      {%- set se = r.session %}
+      <div class="session">
+        <img src="/assets/img/tanz2.jpg" alt="{{ se.image_alt }}">
+        <div class="session-body">
+          <span class="eyebrow">{{ se.eyebrow }}</span>
+          <h2>{{ se.title }}</h2>
+          {%- for p in se.paragraphs %}
+          <p>{{ p | md | safe }}</p>
+          {%- endfor %}
+          <ul class="plus-list">
+            {%- for b in se.benefits %}
+            <li>{{ b }}</li>
+            {%- endfor %}
+          </ul>
+          <p>{{ se.closing | md | safe }}</p>
+          <div class="session-price">
+            {%- for p in se.prices %}<span>{{ p.price }}<small>{{ p.label }}</small></span>{% endfor -%}
+          </div>
+          <div><a class="btn btn--light" href="#kontakt">{{ se.cta }}</a></div>
+        </div>
+      </div>
+    </div>
+  </section>

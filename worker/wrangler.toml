@@ -1,0 +1,13 @@
+name = "wiebke-forms"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# Not secret. Secrets are set with:
+#   npx wrangler secret put BREVO_API_KEY
+#   npx wrangler secret put TURNSTILE_SECRET
+[vars]
+MAIL_TO = "info@wiebke-thiele.de"
+MAIL_FROM = "website@wiebke-thiele.de"
+MAIL_FROM_NAME = "Website Wiebke Thiele"
+# Websites allowed to send forms. Add the github.io address while testing.
+ALLOWED_ORIGINS = "https://www.wiebke-thiele.de,https://wiebke-thiele.de"

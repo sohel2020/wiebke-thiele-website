@@ -1,0 +1,54 @@
+# Pages CMS (https://app.pagescms.org): form editor for the dance dates.
+# Every field of content/waves.yml is listed here, so saving keeps the file complete.
+# Note: saving through Pages CMS rewrites the file and drops its # comments.
+content:
+  - name: waves
+    label: Tanztermine (Wiebkes Waves)
+    type: file
+    path: content/waves.yml
+    fields:
+      - name: series
+        label: Waves
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.title.de}"
+        fields:
+          - name: title
+            label: Name
+            type: object
+            fields:
+              - { name: de, label: Deutsch, type: string, required: true }
+              - { name: en, label: Englisch, type: string, required: true }
+          - name: info
+            label: Wochentag · Ort · Adresse
+            type: object
+            fields:
+              - { name: de, label: Deutsch, type: string, required: true }
+              - { name: en, label: Englisch, type: string, required: true }
+          - name: dates
+            label: Termine
+            type: object
+            list:
+              collapsible:
+                collapsed: false
+                summary: "{fields.date} · {fields.time}"
+            fields:
+              - name: date
+                label: Datum
+                type: date
+                required: true
+                options:
+                  format: yyyy-MM-dd
+              - name: time
+                label: Uhrzeit (z. B. 15.00 – 17.00)
+                type: string
+                required: true
+      - name: budget
+        label: Preisauswahl
+        type: object
+        list: true
+        fields:
+          - { name: de, label: Deutsch, type: string, required: true }
+          - { name: en, label: Englisch, type: string, required: true }

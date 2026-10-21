@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <a class="logo" href="{{ home }}">{{ site.name }}<span>{{ t.nav.subtitle }}</span></a>
+        <p>{{ t.footer.tagline }}</p>
+      </div>
+      <div>
+        <h2>{{ t.footer.practice_title }}</h2>
+        <span>{{ site.address.street }}</span>
+        <span>{{ site.address.city }}</span>
+        <a class="route" href="https://www.google.com/maps/search/?api=1&amp;query={{ site.maps_query | urlencode }}">{{ t.footer.route }}</a>
+      </div>
+      <div>
+        <h2>{{ t.footer.contact_title }}</h2>
+        <a href="tel:{{ site.phone.tel }}">{{ site.phone.display }}</a>
+        <a href="tel:{{ site.mobile.tel }}">{{ site.mobile.display }}</a>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+      <div>
+        <h2>{{ t.footer.hours_title }}</h2>
+        {%- for line in t.footer.hours %}
+        <span>{{ line }}</span>
+        {%- endfor %}
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">{{ buildYear }}</span> {{ t.footer.copyright }}</span>
+      <nav aria-label="{{ t.footer.legal_label }}">
+        <a href="/impressum/">{{ t.footer.impressum }}</a>
+        <a href="/datenschutz/">{{ t.footer.datenschutz }}</a>
+        <a href="#">{{ t.footer.top }}</a>
+      </nav>
+    </div>
+  </div>
+</footer>

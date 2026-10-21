@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if legalPage %}{{ legal[legalPage].title }} · {{ site.name }}{% else %}{{ t.meta.title }}{% endif %}</title>
+<meta name="description" content="{{ t.meta.description }}">
+{%- if isHome %}
+<link rel="canonical" href="{{ site.url }}{{ home }}">
+<link rel="alternate" hreflang="de" href="{{ site.url }}/">
+<link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+{%- endif %}
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon-512.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/hedvig-letters-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+{% include "header.njk" %}
+
+{{ content | safe }}
+
+{% include "footer.njk" %}
+
+<script id="site-config" type="application/json">{{ {
+  lang: lang,
+  endpoint: site.form_endpoint,
+  sitekey: site.turnstile_sitekey,
+  text: { sending: t.forms.sending, failed: t.forms.failed, offline: t.forms.offline,
+          menu: t.nav.menu, close: t.nav.close, noDates: t.rhythmen.signup.no_dates,
+          locale: t.dates.locale, timeSuffix: t.dates.time_suffix },
+  waves: waves.series,
+  budget: waves.budget
+} | json | safe }}</script>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
