@@ -427,6 +427,7 @@ forms:
   sending: Wird gesendet …
   failed: Das hat leider nicht geklappt. Bitte versuche es noch einmal oder ruf mich an.
   offline: Das Formular ist noch nicht verbunden. Bitte ruf mich an oder schreib eine E-Mail.
+  captcha: Bitte bestätige kurz, dass du kein Roboter bist (Kästchen über dem Button).
 
 footer:
   tagline: Osteopathie, Homöopathie und Frauengesundheit in Berlin Weißensee.

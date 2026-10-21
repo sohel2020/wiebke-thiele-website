@@ -412,6 +412,7 @@ forms:
   sending: Sending …
   failed: That did not work. Please try again or call me.
   offline: The form is not connected yet. Please call or send an email.
+  captcha: Please confirm you are not a robot (box above the button).
 
 footer:
   tagline: Osteopathy, homeopathy and women’s health in Berlin Weißensee.

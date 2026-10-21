@@ -72,7 +72,7 @@ if (waveList) {
   ).join('');
 }
 
-// Spam protection: Cloudflare Turnstile loads only once someone starts filling in a form
+// Spam protection: Cloudflare Turnstile loads once a form scrolls into view
 let turnstileReady;
 function loadTurnstile() {
   turnstileReady ??= new Promise((resolve, reject) => {
@@ -85,11 +85,13 @@ function loadTurnstile() {
   });
   return turnstileReady;
 }
-async function ensureCaptcha(form) {
-  if (form.dataset.widget) return form.dataset.widget;
-  const turnstile = await loadTurnstile();
-  form.dataset.widget = turnstile.render(form.querySelector('[data-captcha]'), { sitekey: CONFIG.sitekey, language: LANG });
-  return form.dataset.widget;
+const widgets = new WeakMap();
+function ensureCaptcha(form) {
+  if (!widgets.has(form)) {
+    widgets.set(form, loadTurnstile().then(turnstile =>
+      turnstile.render(form.querySelector('[data-captcha]'), { sitekey: CONFIG.sitekey, language: LANG })));
+  }
+  return widgets.get(form);
 }
 
 function setStatus(form, state, text) {
@@ -123,8 +125,17 @@ function payload(form) {
   return body;
 }
 
+const captchaObserver = CONFIG.sitekey && 'IntersectionObserver' in window
+  ? new IntersectionObserver(entries => entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      captchaObserver.unobserve(entry.target);
+      ensureCaptcha(entry.target).catch(() => {});
+    }), { rootMargin: '300px 0px' })
+  : null;
+
 document.querySelectorAll('form[data-form]').forEach(form => {
-  if (CONFIG.endpoint) form.addEventListener('focusin', () => ensureCaptcha(form).catch(() => {}), { once: true });
+  captchaObserver?.observe(form);
+  form.addEventListener('focusin', () => { if (CONFIG.sitekey) ensureCaptcha(form).catch(() => {}); }, { once: true });
   const button = form.querySelector('button[type="submit"]');
   const done = document.getElementById(form.dataset.form === 'signup' ? 'wave-done' : 'form-done');
 
@@ -139,8 +150,10 @@ document.querySelectorAll('form[data-form]').forEach(form => {
     let widget;
     try {
       widget = await ensureCaptcha(form);
+      const token = window.turnstile.getResponse(widget) || '';
+      if (!token) { setStatus(form, 'error', T.captcha); return; }
       const body = payload(form);
-      body.token = window.turnstile.getResponse(widget) || '';
+      body.token = token;
       const res = await fetch(CONFIG.endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
