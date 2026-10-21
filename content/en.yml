@@ -76,6 +76,25 @@ treatments:
         - price: 90 €
           label: Each follow-up treatment · 50 minutes
       note: ""
+      bodymap:
+        title: Where osteopathy helps
+        intro: Typical complaints and where they sit in the body.
+        image_label: Body outline with seven marked areas
+        points:
+          - label: Head
+            text: Headaches, migraine, dizziness, tinnitus
+          - label: Jaw
+            text: Jaw problems
+          - label: Neck & shoulders
+            text: Neck tension
+          - label: Spine & back
+            text: Back pain
+          - label: Abdomen
+            text: Digestive problems
+          - label: Pelvis
+            text: Complaints during pregnancy or after birth
+          - label: Joints
+            text: Joint complaints, complaints after surgery or injuries
       when_title: When osteopathy?
       when_intro: >-
         Osteopathy is recommended for functional complaints related to movement, posture, muscle tension or
@@ -162,6 +181,34 @@ treatments:
         - price: 90 €
           label: Each follow-up treatment · 50 minutes
       note: Consultations can also take place online.
+      stages:
+        title: At every stage of life
+        intro: Examples of what I support you with, depending on your stage of life.
+        items:
+          - name: Cycle
+            topics:
+              - Menstruation & PMS
+              - Endometriosis
+              - Migraine
+          - name: Pregnancy & birth
+            topics:
+              - Back pain, sciatica
+              - Pelvic floor
+          - name: Perimenopause
+            topics:
+              - Hot flushes
+              - Sleep problems
+              - Mood swings
+          - name: Menopause
+            topics:
+              - Metabolism & weight
+              - Changes in libido
+              - Exhaustion
+          - name: Postmenopause
+            topics:
+              - Osteoporosis
+              - Joint complaints
+              - Muscle tension
       when_title: What does women’s health cover?
       when_intro: >-
         Depending on the stage of life, different complaints can appear on their own or together. The most

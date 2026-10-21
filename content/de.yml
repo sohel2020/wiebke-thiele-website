@@ -82,6 +82,25 @@ treatments:
         - price: 90 €
           label: Jeder weitere Behandlungstermin · 50 Minuten
       note: ""
+      bodymap:
+        title: Wo Osteopathie ansetzt
+        intro: Typische Beschwerden und wo sie im Körper sitzen.
+        image_label: Körperskizze mit sieben markierten Bereichen
+        points:
+          - label: Kopf
+            text: Kopfschmerzen, Migräne, Schwindel, Tinnitus
+          - label: Kiefer
+            text: Kieferprobleme
+          - label: Nacken & Schultern
+            text: Nackenverspannungen
+          - label: Wirbelsäule & Rücken
+            text: Rückenschmerzen
+          - label: Bauch
+            text: Verdauungsprobleme
+          - label: Becken
+            text: Beschwerden in der Schwangerschaft oder nach der Geburt
+          - label: Gelenke
+            text: Gelenkbeschwerden, Beschwerden nach Operationen oder Verletzungen
       when_title: Wann Osteopathie?
       when_intro: >-
         Osteopathie ist empfehlenswert bei funktionellen Beschwerden, die mit Bewegung, Haltung, muskulären
@@ -171,6 +190,34 @@ treatments:
         - price: 90 €
           label: Jeder weitere Behandlungstermin · 50 Minuten
       note: Beratungstermine können auch online erfolgen.
+      stages:
+        title: In jedem Lebensabschnitt
+        intro: Beispiele, wobei ich dich je nach Lebensphase begleite.
+        items:
+          - name: Zyklus
+            topics:
+              - Menstruation & PMS
+              - Endometriose
+              - Migräne
+          - name: Schwangerschaft & Geburt
+            topics:
+              - Rückenschmerzen, Ischias
+              - Beckenboden
+          - name: Perimenopause
+            topics:
+              - Hitzewallungen
+              - Schlafstörungen
+              - Stimmungsschwankungen
+          - name: Menopause
+            topics:
+              - Stoffwechsel & Gewicht
+              - Libidoveränderung
+              - Erschöpfung
+          - name: Postmenopause
+            topics:
+              - Osteoporose
+              - Gelenkbeschwerden
+              - Muskelverspannungen
       when_title: Was gehört zu Frauengesundheit?
       when_intro: >-
         Je nach Lebensabschnitt können verschiedene Beschwerden einzeln und zusammen auftreten. Hier die
