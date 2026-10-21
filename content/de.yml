@@ -144,6 +144,19 @@ treatments:
         - price: 90 €
           label: Jeder weitere Behandlungstermin · 50 Minuten
       note: Beratungstermine und Follow-up-Termine sind auch online möglich.
+      process:
+        title: So läuft die Behandlung ab
+        intro: Prozessorientiert, Schritt für Schritt auf dich abgestimmt.
+        steps:
+          - title: Anamnese
+            text: Ausführliches Erstgespräch, 80 Minuten
+          - title: Passendes Mittel
+            text: Abgestimmt auf dein Beschwerdebild und deinen Gesamtzustand
+          - title: Begleitung
+            text: Zeitnah ein Folgetermin, 50 Minuten, auch online möglich
+          - title: Dokumentation
+            text: Klarer, nachvollziehbarer Behandlungsplan, orientiert an deinem Heilungsprozess
+        loop: Schritte 2 bis 4 wiederholen sich nach Bedarf
       when_title: Wann Homöopathie?
       when_intro: >-
         Homöopathie eignet sich bei funktionellen, chronischen oder wiederkehrenden Beschwerden, bei denen

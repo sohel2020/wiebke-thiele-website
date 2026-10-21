@@ -457,3 +457,25 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   .bodymap { grid-template-columns: 1fr; }
   .bodymap .figure { max-width: 170px; }
 }
+
+/* Homeopathy process */
+.process-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; counter-reset: none; }
+.process-steps > li { position: relative; display: grid; gap: 0.45rem; align-content: start; min-width: 0; padding: 1.3rem 1.2rem; background: var(--slate); border-radius: var(--radius); }
+.process-steps > li:not(:last-child)::after {
+  content: ""; position: absolute; top: 2.15rem; right: -1.05rem; width: 0.9rem; height: 0.9rem;
+  border-top: 2px solid var(--accent); border-right: 2px solid var(--accent); transform: rotate(45deg); z-index: 1;
+}
+.step-num { width: 2rem; height: 2rem; border-radius: 50%; background: var(--surface); color: var(--accent); display: grid; place-items: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+.process-steps strong { font-family: var(--font-display); font-weight: 400; font-size: var(--step-1); line-height: 1.15; margin-top: 0.3rem; }
+.step-text { font-size: 0.95rem; color: var(--muted); }
+.process-loop { display: inline-flex; align-items: center; gap: 0.6rem; justify-self: end; max-width: none; font-size: 0.95rem; color: var(--muted); border: 1px dashed color-mix(in srgb, var(--accent) 55%, transparent); border-radius: 999px; padding: 0.45rem 1rem; }
+.process-loop svg { width: 1.1rem; height: 1.1rem; color: var(--accent); flex: none; }
+@media (max-width: 960px) {
+  .process-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .process-steps > li:nth-child(2)::after { display: none; }
+}
+@media (max-width: 560px) {
+  .process-steps { grid-template-columns: 1fr; gap: 1.4rem; }
+  .process-steps > li:not(:last-child)::after { display: block; top: auto; bottom: -1.15rem; right: auto; left: 1.85rem; transform: rotate(135deg); }
+  .process-loop { justify-self: stretch; border-radius: var(--radius); }
+}

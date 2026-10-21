@@ -136,6 +136,19 @@ treatments:
         - price: 90 €
           label: Each follow-up treatment · 50 minutes
       note: Consultations and follow-up appointments are also possible online.
+      process:
+        title: How treatment works
+        intro: Process-oriented, step by step, tailored to you.
+        steps:
+          - title: Case history
+            text: Detailed first consultation, 80 minutes
+          - title: The right remedy
+            text: Matched to your symptoms and your overall condition
+          - title: Follow-up
+            text: A follow-up soon after, 50 minutes, also possible online
+          - title: Documentation
+            text: A clear treatment plan you can follow, guided by your healing process
+        loop: Steps 2 to 4 repeat as needed
       when_title: When homeopathy?
       when_intro: >-
         Homeopathy suits functional, chronic or recurring complaints where the body’s regulation is disturbed,

@@ -10,6 +10,38 @@ Visitor sends form ──▶ Cloudflare Worker (Turnstile + checks) ──▶ Br
 
 Editing guide for Wiebke (German): [docs/BEARBEITEN.md](docs/BEARBEITEN.md)
 
+## Contact form: what is missing and how to turn it on
+
+**What the Worker does.** The Cloudflare Worker in `worker/` sits between the website and email:
+it receives the form, checks it (allowed website, hidden spam field, Turnstile, field lengths),
+and sends it via Brevo to info@wiebke-thiele.de. "Reply" goes straight to the visitor.
+The Brevo key lives only in Cloudflare, never on the website or in this repo.
+
+**Why the form does not send yet.** `form_endpoint` in `content/site.yml` is empty, because the Worker
+is not deployed and Brevo is not set up. Until then the forms ask visitors to call or email.
+
+**To turn it on:**
+
+1. **Brevo** (brevo.com, free): create account, add domain `wiebke-thiele.de` and its DNS records,
+   create an API key.
+2. **Cloudflare** (free): create account → Turnstile → add site with domains `wiebke-thiele.de`,
+   `www.wiebke-thiele.de` and `sohel2020.github.io`. Note the site key and the secret key.
+3. **Allow the test address**: in `worker/wrangler.toml` add `https://sohel2020.github.io` to `ALLOWED_ORIGINS`.
+4. **Deploy the Worker** (paste secrets only into these prompts):
+   ```sh
+   cd worker
+   npm install
+   npx wrangler login
+   npx wrangler secret put BREVO_API_KEY
+   npx wrangler secret put TURNSTILE_SECRET
+   npx wrangler deploy          # prints https://wiebke-forms.<sub>.workers.dev
+   ```
+5. **Connect the site**: in `content/site.yml` set
+   `form_endpoint: https://wiebke-forms.<sub>.workers.dev/send` and `turnstile_sitekey: <site key>`, then commit.
+6. **Test**: send one message through each form and check the inbox.
+
+Details for every step follow below.
+
 ## Structure
 
 | Path | What |
