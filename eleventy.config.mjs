@@ -1,3 +1,4 @@
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import * as yaml from "js-yaml";
@@ -31,6 +32,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("json", (value) => JSON.stringify(value).replace(/</g, "\\u003c"));
   eleventyConfig.addGlobalData("legal", () => loadLegal("content/legal"));
   eleventyConfig.addGlobalData("buildYear", () => new Date().getFullYear());
+  // Fingerprint of CSS + JS, appended as ?v=… so browsers fetch new files right after a deploy
+  eleventyConfig.addGlobalData("assetVersion", () =>
+    crypto.createHash("sha256")
+      .update(fs.readFileSync("src/assets/css/site.css"))
+      .update(fs.readFileSync("src/assets/js/site.js"))
+      .digest("hex").slice(0, 10));
 
   return {
     dir: { input: "src", includes: "_includes", data: "../content", output: "_site" },
