@@ -480,3 +480,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   .process-steps > li:not(:last-child)::after { display: block; top: auto; bottom: -1.15rem; right: auto; left: 1.85rem; transform: rotate(135deg); }
   .process-loop { justify-self: stretch; border-radius: var(--radius); }
 }
+
+/* Icon before phone numbers and email */
+.with-ico { display: inline-flex; align-items: center; gap: 0.5em; }
+.with-ico .ico { width: 1.1em; height: 1.1em; flex: none; color: var(--accent); }
+.site-footer .with-ico .ico { color: #F2C4C6; }

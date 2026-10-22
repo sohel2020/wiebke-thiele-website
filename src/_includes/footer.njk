@@ -13,9 +13,9 @@
       </div>
       <div>
         <h2>{{ t.footer.contact_title }}</h2>
-        <a href="tel:{{ site.phone.tel }}">{{ site.phone.display }}</a>
-        <a href="tel:{{ site.mobile.tel }}">{{ site.mobile.display }}</a>
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a class="with-ico" href="tel:{{ site.phone.tel }}">{% include "icons/phone.njk" %}{{ site.phone.display }}</a>
+        <a class="with-ico" href="tel:{{ site.mobile.tel }}">{% include "icons/mobile.njk" %}{{ site.mobile.display }}</a>
+        <a class="with-ico" href="mailto:{{ site.email }}">{% include "icons/mail.njk" %}{{ site.email }}</a>
       </div>
       <div>
         <h2>{{ t.footer.hours_title }}</h2>
