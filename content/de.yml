@@ -410,10 +410,7 @@ booking:
   title: Online Termin buchen.
   lead: Wähle die Behandlung, den Tag und die Uhrzeit. Die Bestätigung kommt per E-Mail.
   overview_title: Behandlungen und Dauer
-  privacy: >-
-    Der Buchungskalender wird von Calendly (USA) bereitgestellt.
-    Erst wenn du ihn lädst, werden Daten dorthin übertragen.
-  load: Buchungskalender laden
+  privacy: Der Buchungskalender wird von Calendly (USA) bereitgestellt. Mehr dazu in der Datenschutzerklärung.
   open: Im neuen Fenster öffnen
   frame_title: Buchungskalender
   phone_hint: Lieber telefonisch?

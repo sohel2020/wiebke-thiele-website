@@ -395,10 +395,7 @@ booking:
   title: Book your appointment online.
   lead: Choose the treatment, the day and the time. The confirmation comes by email.
   overview_title: Treatments and duration
-  privacy: >-
-    The booking calendar is provided by Calendly (USA).
-    Data is only sent there once you load it.
-  load: Load booking calendar
+  privacy: The booking calendar is provided by Calendly (USA). More in the privacy policy.
   open: Open in a new window
   frame_title: Booking calendar
   phone_hint: Prefer to call?
