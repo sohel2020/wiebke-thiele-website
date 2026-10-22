@@ -12,9 +12,9 @@ Editing guide for Wiebke (German): [docs/BEARBEITEN.md](docs/BEARBEITEN.md)
 
 ## Online booking
 
-The "Termin buchen" section embeds a **Zoho Bookings** page (free plan, EU data centre).
+The "Termin buchen" section embeds a **Calendly** page (free plan: one event type, the treatment is a booking question).
 Set `booking_url` in `content/site.yml`; while it is empty the section shows "folgt in Kürze".
-The calendar iframe loads only after the visitor clicks, so nothing goes to Zoho before that.
+The calendar iframe loads only after the visitor clicks, so nothing goes to Calendly before that.
 All "Termin vereinbaren / Termin machen" buttons point to `#buchung`; the contact form stays for questions.
 Setup guide (German): [docs/TERMINBUCHUNG.md](docs/TERMINBUCHUNG.md)
 

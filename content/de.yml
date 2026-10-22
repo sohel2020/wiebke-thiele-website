@@ -411,7 +411,7 @@ booking:
   lead: Wähle die Behandlung, den Tag und die Uhrzeit. Die Bestätigung kommt per E-Mail.
   overview_title: Behandlungen und Dauer
   privacy: >-
-    Der Buchungskalender wird von Zoho Bookings bereitgestellt (Rechenzentrum in der EU).
+    Der Buchungskalender wird von Calendly (USA) bereitgestellt.
     Erst wenn du ihn lädst, werden Daten dorthin übertragen.
   load: Buchungskalender laden
   open: Im neuen Fenster öffnen

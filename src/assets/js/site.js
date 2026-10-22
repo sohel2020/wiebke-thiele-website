@@ -172,13 +172,18 @@ document.querySelectorAll('form[data-form]').forEach(form => {
   });
 });
 
-// Booking calendar (Zoho Bookings) loads only after a click, so nothing goes to Zoho before that
+// Booking calendar (Calendly) loads only after a click, so nothing goes to Calendly before that
 const bookingLoad = document.getElementById('booking-load');
 if (bookingLoad && CONFIG.booking) {
   bookingLoad.addEventListener('click', () => {
     const frame = document.getElementById('booking-frame');
     const iframe = document.createElement('iframe');
-    iframe.src = CONFIG.booking;
+    const url = new URL(CONFIG.booking);
+    // Calendly inline embed parameters; harmless for other providers
+    url.searchParams.set('embed_domain', location.hostname);
+    url.searchParams.set('embed_type', 'Inline');
+    url.searchParams.set('hide_gdpr_banner', '1');
+    iframe.src = url.toString();
     iframe.title = frame.dataset.title;
     iframe.loading = 'eager';
     frame.appendChild(iframe);

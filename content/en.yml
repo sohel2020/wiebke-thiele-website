@@ -396,7 +396,7 @@ booking:
   lead: Choose the treatment, the day and the time. The confirmation comes by email.
   overview_title: Treatments and duration
   privacy: >-
-    The booking calendar is provided by Zoho Bookings (data centre in the EU).
+    The booking calendar is provided by Calendly (USA).
     Data is only sent there once you load it.
   load: Load booking calendar
   open: Open in a new window
