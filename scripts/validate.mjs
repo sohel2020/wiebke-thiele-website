@@ -55,8 +55,6 @@ if (de && en) {
 
 if (site) {
   for (const key of ["name", "practice", "url", "email", "maps_query"]) if (!site[key]) fail("site.yml", `"${key}" fehlt.`);
-  if (site.booking_url && !/^https:\/\/\S+$/.test(site.booking_url))
-    fail("site.yml", `"booking_url" muss mit https:// beginnen (oder leer sein, solange Calendly noch nicht eingerichtet ist).`);
   for (const key of ["phone", "mobile"]) if (!site[key]?.display || !site[key]?.tel) fail("site.yml", `"${key}" braucht "display" und "tel".`);
   if (de && site.treatments?.length !== de.treatments?.items?.length)
     fail("site.yml", `"treatments" hat ${site.treatments?.length} Einträge, de.yml aber ${de.treatments?.items?.length} Behandlungen.`);

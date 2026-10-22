@@ -171,29 +171,3 @@ document.querySelectorAll('form[data-form]').forEach(form => {
     }
   });
 });
-
-// Booking calendar (Calendly) loads automatically once the booking section comes near the screen
-const bookingFrame = document.getElementById('booking-frame');
-if (bookingFrame && CONFIG.booking) {
-  const loadBooking = () => {
-    const url = new URL(CONFIG.booking);
-    // Calendly inline embed parameters; harmless for other providers
-    url.searchParams.set('embed_domain', location.hostname);
-    url.searchParams.set('embed_type', 'Inline');
-    url.searchParams.set('hide_gdpr_banner', '1');
-    const iframe = document.createElement('iframe');
-    iframe.src = url.toString();
-    iframe.title = bookingFrame.dataset.title;
-    bookingFrame.appendChild(iframe);
-  };
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(entries => {
-      if (!entries.some(e => e.isIntersecting)) return;
-      observer.disconnect();
-      loadBooking();
-    }, { rootMargin: '600px 0px' });
-    observer.observe(bookingFrame);
-  } else {
-    loadBooking();
-  }
-}
