@@ -24,7 +24,7 @@ maps_query: Lehderstraße 60, 13086 Berlin
 
 # Online-Terminbuchung: Adresse der Calendly-Seite, z. B. https://calendly.com/wiebke-thiele/termin
 # Leer lassen, solange Calendly noch nicht eingerichtet ist. Dann zeigt die Website "folgt in Kürze".
-booking_url: ""
+booking_url: "https://calendly.com/sohel2020"
 
 # Formulare: Adresse des Cloudflare Workers, der die E-Mails verschickt.
 # Leer lassen, solange der Worker noch nicht eingerichtet ist.
