@@ -10,6 +10,14 @@ Visitor sends form ──▶ Cloudflare Worker (Turnstile + checks) ──▶ Br
 
 Editing guide for Wiebke (German): [docs/BEARBEITEN.md](docs/BEARBEITEN.md)
 
+## Online booking
+
+The "Termin buchen" section embeds a **Zoho Bookings** page (free plan, EU data centre).
+Set `booking_url` in `content/site.yml`; while it is empty the section shows "folgt in Kürze".
+The calendar iframe loads only after the visitor clicks, so nothing goes to Zoho before that.
+All "Termin vereinbaren / Termin machen" buttons point to `#buchung`; the contact form stays for questions.
+Setup guide (German): [docs/TERMINBUCHUNG.md](docs/TERMINBUCHUNG.md)
+
 ## Contact form: what is missing and how to turn it on
 
 **What the Worker does.** The Cloudflare Worker in `worker/` sits between the website and email:

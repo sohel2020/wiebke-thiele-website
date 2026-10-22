@@ -15,7 +15,7 @@
         <a href="{% if isHome %}/{% else %}{{ page.url }}{% endif %}" lang="de" hreflang="de"{% if lang == "de" %} aria-current="page"{% endif %}>DE</a>
         <a href="/en/" lang="en" hreflang="en"{% if lang == "en" %} aria-current="page"{% endif %}>EN</a>
       </nav>
-      <a class="header-cta" data-short="{{ t.nav.cta_short }}" href="{{ home }}#kontakt">
+      <a class="header-cta" data-short="{{ t.nav.cta_short }}" href="{{ home }}#buchung">
         <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4.5" width="14" height="12.5" rx="2"/><path d="M3 8.5h14M7 2.5v4M13 2.5v4"/></svg>
         <span>{{ t.nav.cta }}</span>
       </a>

@@ -171,3 +171,19 @@ document.querySelectorAll('form[data-form]').forEach(form => {
     }
   });
 });
+
+// Booking calendar (Zoho Bookings) loads only after a click, so nothing goes to Zoho before that
+const bookingLoad = document.getElementById('booking-load');
+if (bookingLoad && CONFIG.booking) {
+  bookingLoad.addEventListener('click', () => {
+    const frame = document.getElementById('booking-frame');
+    const iframe = document.createElement('iframe');
+    iframe.src = CONFIG.booking;
+    iframe.title = frame.dataset.title;
+    iframe.loading = 'eager';
+    frame.appendChild(iframe);
+    frame.hidden = false;
+    document.getElementById('booking-consent').hidden = true;
+    iframe.focus();
+  });
+}

@@ -405,6 +405,21 @@ praxis:
   pay: Für Selbstzahlende, Privatversicherte und bezuschusst von vielen Krankenkassen.
   map_title: "Karte: Gesundheitspraxis Wiebke Thiele, Lehderstraße 60, 13086 Berlin"
 
+booking:
+  eyebrow: Termin buchen
+  title: Online Termin buchen.
+  lead: Wähle die Behandlung, den Tag und die Uhrzeit. Die Bestätigung kommt per E-Mail.
+  overview_title: Behandlungen und Dauer
+  privacy: >-
+    Der Buchungskalender wird von Zoho Bookings bereitgestellt (Rechenzentrum in der EU).
+    Erst wenn du ihn lädst, werden Daten dorthin übertragen.
+  load: Buchungskalender laden
+  open: Im neuen Fenster öffnen
+  frame_title: Buchungskalender
+  phone_hint: Lieber telefonisch?
+  coming_soon_title: Online-Buchung folgt in Kürze
+  coming_soon: Bis dahin vereinbarst du deinen Termin einfach per Telefon oder E-Mail.
+
 kontakt:
   eyebrow: Kontakt
   title: Schreib mir.
